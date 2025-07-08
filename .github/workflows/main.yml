@@ -10,9 +10,8 @@ jobs:
     steps:
     - name: Download and install Essentials
       run: |
-        Invoke-WebRequest -Uri "https://gitlab.com/chamod12/Im_win-10_github_rdp/-/raw/main/Downloads.bat"
-    Invoke-WebRequest -Uri $url -OutFile "Downloads.bat" -UseBasicParsing
-    cmd /c Downloads.bat
+        Invoke-WebRequest -Uri "https://gitlab.com/chamod12/Im_win-10_github_rdp/-/raw/main/Downloads.bat" -OutFile "Downloads.bat" -UseBasicParsing
+        cmd /c Downloads.bat
 
     - name: Run LiteManager
       run: cmd /c show.bat
